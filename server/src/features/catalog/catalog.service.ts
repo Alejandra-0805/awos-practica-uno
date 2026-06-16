@@ -22,7 +22,6 @@ export class CatalogService {
     return {
       id: entity.id,
       name: entity.name,
-      description: 'todavia no hay descripción'
     };
   }
 }
