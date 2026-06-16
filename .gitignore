@@ -1,0 +1,83 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# ==========================================
+# Dependencias globales del Monorepo
+# ==========================================
+node_modules/
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+
+# ==========================================
+# Backend (Server - Node/Express)
+# ==========================================
+server/node_modules/
+server/dist/
+server/build/
+server/.env
+server/.env.local
+
+# ==========================================
+# Frontend (Web-app - Next.js)
+# ==========================================
+web-app/node_modules/
+web-app/.next/
+web-app/out/
+web-app/build/
+
+# Next.js env files (No subir las credenciales)
+web-app/.env
+web-app/.env.local
+web-app/.env.development.local
+web-app/.env.test.local
+web-app/.env.production.local
+
+# Next.js logs y telemetría
+web-app/.next/cache/
+web-app/npm-debug.log*
+web-app/yarn-debug.log*
+web-app/yarn-error.log*
+
+# ==========================================
+# Configuración del Sistema / IDEs (Opcional)
+# ==========================================
+.DS_Store
+.idea/
+.vscode/
+*.log
